@@ -1,0 +1,157 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<div class="container m-24 flex justify-center">
+    <div>
+        <h1>Pizza</h1>
+        <div class="flex gap-2">
+            <div>
+                <div class="bg-gray-500 h-24 w-48"></div>
+                <div class="flex justify-center">
+                    <h4>Pizza 1</h4>
+                </div>
+                <div>
+                    <h4>$8</h4>
+                </div>
+                <div class="flex justify-center">
+                    <input class="w-8 h-8" type="radio" onchange="handlePizza(this)" value="pizza1" name="pizza"/>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-500 h-24 w-48"></div>
+                <div class="flex justify-center">
+                    <h4>Pizza 2</h4>
+                </div>
+                <div>
+                    <h4>$10</h4>
+                </div>
+                <div class="flex justify-center">
+                    <input class="w-8 h-8" type="radio" onchange="handlePizza(this)" value="pizza2" name="pizza"/>
+                </div>
+            </div>
+            <div>
+                <div class="bg-gray-500 h-24 w-48"></div>
+                <div class="flex justify-center">
+                    <h4>Pizza 3</h4>
+                </div>
+                <div>
+                    <h4>$12</h4>
+                </div>
+                <div class="flex justify-center">
+                    <input class="w-8 h-8" type="radio" onchange="handlePizza(this)" value="pizza3" name="pizza"/>
+                </div>
+            </div>
+        </div>
+        <div class="mt-24">
+            <h1>Size</h1>
+            <div class="flex justify-center gap-8">
+                <div>
+                    <input class="w-8 h-8" type="radio" id="small" name="size"/>
+                    <div>
+                        <span>Small</span>
+                    </div>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="radio" id="medium" name="size"/>
+                    <div>
+                        <span>Medium</span>
+                    </div>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="radio" id="large" name="size"/>
+                    <div>
+                        <span>Large</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mt-24">
+            <h1>Toppings</h1>
+            <div class="my-2 grid grid-cols-3 gap-4">
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="avocado" name="avocado"/>
+                    <span>Avocado</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="lobster" name="lobster"/>
+                    <span>Lobster</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="bacon" name="bacon"/>
+                    <span>Bacon</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="broccoli" name="broccoli"/>
+                    <span>Broccoli</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="oyster" name="oyster"/>
+                    <span>Oyster</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="duck" name="duck"/>
+                    <span>Duck</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="onions" name="onions"/>
+                    <span>Onions</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="salmon" name="toppings"/>
+                    <span>Salmon</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="ham" name="ham"/>
+                    <span>Ham</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="zucchini" name="zucchini"/>
+                    <span>Zucchini</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="tuna" name="tuna"/>
+                    <span>Tuna</span>
+                </div>
+                <div>
+                    <input class="w-8 h-8" type="checkbox" id="sausage" name="sausage"/>
+                    <span>Sausage</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-24">
+            <h1>Price</h1>
+            <div>
+                <h1 class="font-bold text-3xl"><b id="priceId">$0</b></h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
