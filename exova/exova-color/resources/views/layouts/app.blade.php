@@ -15,7 +15,6 @@
     <div id="app">
         @yield('content')
     </div>
-
     @include('admin.partials.script')
     @include('admin.partials.notif')
 </body>
